@@ -19,7 +19,7 @@ function start (opts) {
     if (err) {
       throw err
     }
-
+    app.server.requestTimeout = 1;
     app.log.info('server listening on port %d', app.server.address().port)
   })
 }
