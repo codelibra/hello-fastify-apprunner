@@ -19,6 +19,7 @@ function start (opts) {
     if (err) {
       throw err
     }
+    app.server.timeout = 1;
     app.server.requestTimeout = 1;
     app.server.keepAliveTimeout = 1;
     app.server.forceCloseConnections = true;
